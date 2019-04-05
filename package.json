@@ -9,11 +9,18 @@
     "build:linux": "npm run build:linux32 && npm run build:linux64",
     "build:linux32": "build --linux --ia32",
     "build:linux64": "build --linux --x64",
-    "build:win": "npm run build:win32 && npm run build:win64", 
+    "build:win": "npm run build:win32 && npm run build:win64",
     "build:win32": "build --win --ia32",
     "build:win64": "build --win --x64"
   },
-  "keywords": ["wallet","steem", "steemit", "wonsama", "happyberrysboy", "newbijohn"],
+  "keywords": [
+    "wallet",
+    "steem",
+    "steemit",
+    "wonsama",
+    "happyberrysboy",
+    "newbijohn"
+  ],
   "author": "wonsama",
   "license": "MIT",
   "devDependencies": {
@@ -24,9 +31,11 @@
     "productName": "swallet",
     "appId": "happy.new.won",
     "asar": true,
-    "protocols" : {
-        "name" : "swallet",
-        "schemes" : ["swallet"]
+    "protocols": {
+      "name": "swallet",
+      "schemes": [
+        "swallet"
+      ]
     },
     "mac": {
       "target": [
@@ -47,7 +56,7 @@
     },
     "linux": {
       "target": [
-        "AppImage", 
+        "AppImage",
         "deb",
         "rpm",
         "zip",
@@ -55,14 +64,15 @@
       ],
       "icon": "./resources/installer/Icon.png"
     },
-    "nsis":{
-      "oneClick" : false,
-      "allowToChangeInstallationDirectory" :true
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true
     },
     "directories": {
       "buildResources": "resources/installer/",
       "output": "dist/",
       "app": "."
     }
-  }
+  },
+  "dependencies": {}
 }
